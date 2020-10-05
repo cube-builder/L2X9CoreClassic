@@ -25,7 +25,6 @@ public class BlockPlace extends BlockListener {
     private boolean isChecked(Material material) {
         switch (material) {
             case BEDROCK:
-            case MOB_SPAWNER:
             case PORTAL:
                 return true;
         }
