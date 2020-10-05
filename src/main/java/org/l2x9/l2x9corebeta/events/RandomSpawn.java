@@ -1,5 +1,6 @@
 package org.l2x9.l2x9corebeta.events;
 
+import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -14,7 +15,14 @@ public class RandomSpawn extends PlayerListener {
         Player player = event.getPlayer();
         World world = player.getWorld();
         Location loc = this.generateRandomLocation(world);
-        event.setRespawnLocation(loc);
+        switch(world.getEnvironment())
+        {
+        	case NETHER:
+        		loc.setWorld(Bukkit.getWorlds().get(0));
+        		event.setRespawnLocation(loc);
+        	default:
+        		event.setRespawnLocation(loc);
+        }
     }
 
     public boolean checkValidLocation(Location loc) {
