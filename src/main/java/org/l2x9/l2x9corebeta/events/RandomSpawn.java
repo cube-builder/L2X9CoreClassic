@@ -20,9 +20,6 @@ public class RandomSpawn extends PlayerListener {
         	case NETHER:
         		loc.setWorld(Bukkit.getWorlds().get(0));
         		event.setRespawnLocation(loc);
-            case THE_END:
-                loc.setWorld(Bukkit.getWorlds().get(0));
-                event.setRespawnLocation(loc);
         	default:
         		event.setRespawnLocation(loc);
         }
