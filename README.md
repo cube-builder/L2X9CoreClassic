@@ -1,5 +1,7 @@
 # L2X9CoreBeta
 L2X9Core Classic is sort of an essentials but for beta 1.5, beta 1.6, beta 1.8 and release 1.0.0
+# End of Development
+As of Novemeber 30, 2020. Development has stopped. You will not get any support for this plugin.
 ### Features
 Anti-illegal
 Join Messages
